@@ -1,10 +1,10 @@
-const DBpassword = require('DBpassword');
+const DB = require('./DBpassword');
 
 module.exports = {
   client: 'mysql',
   connection: {
     user: 'root',
-    password: DBpassword,
+    password: DB.password,
     database: 'node_with_mysql'
   }
 }
